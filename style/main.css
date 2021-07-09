@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*
+  共通
+  ----------------------------------------------------------------------------------
+*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #443322;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.page_title {
+  font-size: 5rem;
+  font-family: serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* Button */
+.button {
+  font-size: 1.375rem;
+  background: #000000;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button a {
+  color: #f0f8ff;
+}
+
+.button:hover {
+  background: #292929;
+  cursor: pointer;
+}
+
+
+/*
+  Header
+  ----------------------------------------------------------------------------------
+*/
+
+.page_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 210px;
+  height: 60px;
+}
+
+.main_nav {
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main_nav li {
+  margin-left: 36px;
+}
+
+.main_nav a {
+  color: #443322;
+}
+
+.main_nav a:hover {
+  color: #6e4a25;
+}
+
+/*
+  Home
+  ----------------------------------------------------------------------------------
+*/
+
+#home {
+  background: radial-gradient(#b8ffea80, #d1e9ff80, #f0f8ff);
+  height: 100vh;
+}
+
+#home .page_title {
+  text-transform: none;
+}
+
+.home_contents {
+  margin-top: 5%;
+}
+
+.home_contents p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+.container_button {
+  text-align: center;
+}
+
+/*
+  Art of Code
+  ---------------------------------------------------------------------------------- 
+*/
+.atcode_contents {
+  margin-top: 5%;
+}
+
+.atcode_contents p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+/* Grid Images */
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+/*
+  footer
+  ----------------------------------------------------------------------------------
+*/
+
+footer {
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 5%;
+}
+
+footer p {
+  color: #443322;
+  font-size: 0.875rem;
+}
+
+/*
+  Mobile
+  ----------------------------------------------------------------------------------
+*/
+@media (max-width: 600px) {
+  /*
+    Common
+    ----------------------------------------------------------------------------------
+  */
+
+  /* Page Title */
+  .page_title {
+    font-size: 2.5rem;
+  }
+
+  /* Page Header */
+  .page_header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_nav {
+    font-size: 1.25rem;
+    margin-top: 30px;
+  }
+
+  .main_nav li {
+    margin: 0 20px;
+  }
+
+  .button {
+    font-size: 1.25rem;
+    background: #000000;
+    border-radius: 5px;
+  }
+
+
+  /*
+    Home
+    ----------------------------------------------------------------------------------
+  */
+
+  .home_contents {
+    margin-top: 30%;
+    text-align: center;
+  }
+}
