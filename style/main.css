@@ -93,7 +93,8 @@ img {
 */
 
 #home {
-  background: radial-gradient(#b8ffea80, #d1e9ff80, #f0f8ff);
+  /*background: radial-gradient(#b8ffea80, #d1e9ff80, #f0f8ff);*/
+  background-color: #faebd7;
   height: 100vh;
 }
 
@@ -118,6 +119,10 @@ img {
   Art of Code
   ---------------------------------------------------------------------------------- 
 */
+#art_of_code {
+  background-color: #faebd7;
+}
+
 .atcode_contents {
   margin-top: 5%;
 }
@@ -128,12 +133,49 @@ img {
 }
 
 /* Grid Images */
-.grid {
+.grid_atcode {
   display: grid;
   gap: 26px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-top: 6%;
   margin-bottom: 50px;
+}
+
+/*
+  Art of Code
+  Paint Texture Wave 
+  Aqua and Ocean Moon and Night
+  Mountain and Forest The Lost Forest
+  Nature Particle Sound ...etc
+  ----------------------------------------------------------------------------------
+*/
+
+#art_of_code_item {
+  background-color: #faebd7;
+}
+
+/* Grid Images */
+.grid_atcode_item {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.item_card {
+
+  background-color: #ebebeb7e;
+  box-shadow: -2rem 0 3rem -2rem rgb(209, 209, 209);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.1s;
+  position: relative;
+}
+
+.item_card:hover {
+  transform: translateY(-1rem) rotate(3deg);
+
 }
 
 /*
